@@ -581,6 +581,17 @@ footer {
 }
 
 /* Modal */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    background: linear-gradient(rgba(54, 57, 63, 0.75), rgba(54, 57, 63, 0.95)), url('assets/cover.jpg') center/cover no-repeat;
+    position: relative;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
