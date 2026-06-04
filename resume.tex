@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : ETH juniors
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+% Website : www.ethjuniors.ch
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\footskip}{4.08003pt}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+
+% Custom font
+\usepackage[default]{lato}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------%
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{Black}{RGB}{0, 0, 0}
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+\begin{document}
+
+%----------HEADING----------%
+\begin{center}
+    \textbf{\Huge Rakesh Kumar} \\[7.5pt]
+    \small
+    \href{tel:+916377003472}{\raisebox{-0.05\height}\faMobile \ +91-6377003472} \ $|$ \ 
+    \href{mailto:rakeshkumarjnv7364@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ rakeshkumarjnv7364@gmail.com} \ $|$ \ 
+    \href{https://www.linkedin.com/in/rakesh-d-kumar/}{\raisebox{-0.05\height}\faLinkedin \ rakesh-d-kumar} \ $|$ \ 
+    \href{https://github.com/Vamp-Niklaus}{\raisebox{-0.05\height}\faGithub \ Vamp-Niklaus}
+\end{center}
+
+%-----------EDUCATION-----------%
+\section{Education}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Indian Institute of Technology (BHU), Varanasi}{Dec 2021 -- May 2025}
+    {Bachelor of Technology in Computer Science and Engineering (CGPA: \textbf{7.93} )}{Varanasi, Uttar Pradesh}
+
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------%
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Samsung R\&D Institute India (SRI-Delhi)}{July 2025 -- Present}
+    {Software Engineer -- R\&D (Core Platform Software)}{Delhi, India}
+    \resumeItemListStart
+        \resumeItem{Resolved \textbf{120+ software defects (Kona)} and submitted \textbf{65+ changelists} via Perforce in a multi-threaded \textbf{C++} codebase. Investigated and fixed critical memory crashes (SIGABRT/SIGSEGV) and race conditions.}
+        \resumeItem{Maintained the \textbf{Core Apps} platform and \textbf{AVControl} module, managing the deployment lifecycle from building \textbf{RPMs} to flashing and testing on target hardware.}
+        \resumeItem{Collaborated across the Broadcast and Core Platform teams to manage cross-module communication using configuration APIs, ensuring smooth interaction between the hardware, UI, and accessibility layers.}
+        \resumeItem{Developed an internal \textbf{Log Analysis tool} that automated the parsing and structuring of defect logs. Integrated an \textbf{MCP Server} exposing \textbf{REST APIs} for selective codebase retrieval and log filtering, connecting the pipeline to an AI assistant to accelerate root-cause analysis.}
+    \resumeItemListEnd
+    \begin{small}
+    {\textbf{Exposure: } C++, OOP, Multithreading, API Integration, Perforce, Debugging.}
+    \end{small}
+
+    \resumeSubheading
+    {LTIMindtree}{May 2024 -- July 2024}
+    {Summer Intern}{India}
+    \resumeItemListStart
+        \resumeItem{Performed large-scale web scraping on Zauba Corp, extracting data of \textbf{2.7M+ companies} into MySQL.}
+        \resumeItem{Developed a \textbf{Flask-based front-end} for streamlined database interaction and data visualization for the scraped data.}
+        \resumeItem{Contributed to the frontend development of an \textbf{ML-based application} for extracting transaction details from payment screenshots.}
+    \resumeItemListEnd
+    \begin{small}
+    {\textbf{Exposure: } Python, Flask, BeautifulSoup, Render, GitHub, Cron-job, MySQL, HTML, CSS, JavaScript.}
+    \end{small}
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------%
+\section{Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+        \textbf{Programming Languages}{: C, C++, Python, Dart, JavaScript, SQL.} \\
+		\textbf{Tools and Frameworks}{: Django, Flask, Flutter, MySQL, Docker, Git, Perforce, REST APIs.} \\
+        \textbf{Core Concepts}{: OOP, Multithreading, Machine Learning, Collaborative Filtering, Web Scraping.} \\
+	}}
+    \end{itemize}
+
+%-----------PROJECTS-----------%
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{MyMoney} $|$ \emph{Personal Finance Tracker} $|$ \href{https://github.com/Vamp-Niklaus/MyMoney}{GitHub} $|$ \href{https://vamp-niklaus.github.io/MyMoney/}{Website}}{Nov 2025 -- Present}
+    \resumeItemListStart
+        \resumeItem{Developed an offline-first personal finance application that allows users to monitor daily expenses, invite peers, and seamlessly manage and settle shared group ledgers.}
+        \resumeItem{Engineered a \textbf{Flutter} app with \textbf{Firebase} real-time sync, \textbf{SQLite (Drift)} local caching, and \textbf{OAuth}. Optimized NoSQL schemas via subcollections and batched writes for scalable data reads.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Movie Recommendation System using KNN} $|$ \emph{Guided by Dr. Bidyut Kumar Patra} $|$ \href{https://github.com/Vamp-Niklaus/Movie-Recommendation-System}{GitHub}}{Jan 2023 -- Apr 2023}
+    \resumeItemListStart
+        \resumeItem{Developed a user-based \textbf{KNN model} with collaborative filtering, leveraging \textbf{Cosine Similarity} to provide personalized movie recommendations based on historical ratings.}
+        \resumeItem{Achieved final recommendations with \textbf{MAPE values of order $10^{-1}$} using K-Nearest Neighbor model.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{OTT Ratings} $|$ \emph{Guided by Dr. Amrita Chaturvedi} $|$ \href{https://github.com/Vamp-Niklaus/OTT-Ratings}{GitHub} $|$ \href{https://ottratings.onrender.com/}{Live}}{July 2022 -- Nov 2022}
+    \resumeItemListStart
+        \resumeItem{Developed an OTT Ratings platform using \textbf{Django}, allowing users to view, rate, and comment on web series including their seasons and episodes. Users can sort and filter series by preferences, or search directly by name.}
+        \resumeItem{Utilized \textbf{Django models} to manage user details, ratings, comments, and web series data in the backend.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------HONOURS & ACHIEVEMENTS-----------%
+\section{Honours and Achievements}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{Competitive Programming}}    {}
+    \resumeItemListStart
+        \resumeItem{Maximum rating of \textbf{1469 (Specialist)} on Codeforces. Maximum rating of \textbf{1494} on CodeChef.}
+        \resumeItem{Secured \textbf{Global Rank 50} in CodeChef August Long 2022 Div 4. Rank \textbf{1915} in Codeforces Round 852 (Div.\ 2). Rank \textbf{2199} in Educational Codeforces Round 142 (Div.\ 2).}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------%
+\end{document}
