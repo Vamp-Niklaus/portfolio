@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Kumar | Software Engineer</title>
+    <meta name="description" content="Portfolio of Rakesh Kumar, Software Engineer at Samsung R&D and CSE Student at IIT(BHU).">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">RK.</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-cover"></div>
+        <div class="hero-content animate-on-scroll">
+            <div class="profile-img-container">
+                <img src="assets/photo.jpeg" alt="Rakesh Kumar" class="profile-img">
+            </div>
+            <h1 class="typing-text">Hi, I'm <span class="highlight">Rakesh Kumar</span></h1>
+            <h2 class="subtitle">Software Engineer @ Samsung R&D | IIT (BHU)</h2>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#" id="resume-btn" class="btn secondary-btn">View Resume <i class="fa-solid fa-eye"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title animate-on-scroll">About Me</h2>
+        <div class="about-content animate-on-scroll">
+            <p>I am a 20-year-old Computer Science and Engineering student at IIT(BHU), Varanasi. My interests lie in expanding my knowledge across various domains, particularly in Software Engineering, Web Development, and Machine Learning. Currently, I am applying my skills as a Software Engineer in R&D at Samsung, tackling complex challenges in core platform software and C++ multithreading.</p>
+        </div>
+        
+        <!-- Skills -->
+        <div class="skills-container animate-on-scroll">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span>C++</span><span>C</span><span>Python</span><span>Dart</span><span>JavaScript</span><span>SQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks & Tools</h3>
+                <div class="skill-tags">
+                    <span>Django</span><span>Flask</span><span>Flutter</span><span>MySQL</span><span>Docker</span><span>Git</span><span>REST APIs</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Core Concepts</h3>
+                <div class="skill-tags">
+                    <span>OOP</span><span>Multithreading</span><span>Machine Learning</span><span>Web Scraping</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <h2 class="section-title animate-on-scroll">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <h3>Software Engineer - R&D</h3>
+                    <h4>Samsung R&D Institute India (SRI-Delhi)</h4>
+                    <span class="date">July 2025 - Present</span>
+                    <ul>
+                        <li>Resolved 120+ software defects and submitted 65+ changelists in a multi-threaded C++ codebase, fixing critical memory crashes (SIGABRT/SIGSEGV).</li>
+                        <li>Maintained the Core Apps platform and AVControl module, managing deployment lifecycle from building RPMs to flashing.</li>
+                        <li>Developed an internal Log Analysis tool with an MCP Server exposing REST APIs to accelerate root-cause analysis.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <h3>Summer Intern</h3>
+                    <h4>LTIMindtree</h4>
+                    <span class="date">May 2024 - July 2024</span>
+                    <ul>
+                        <li>Performed large-scale web scraping extracting data of 2.7M+ companies into MySQL.</li>
+                        <li>Developed a Flask-based front-end for streamlined database interaction and visualization.</li>
+                        <li>Contributed to the frontend of an ML-based application for extracting transaction details from payment screenshots.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <h2 class="section-title animate-on-scroll">Education</h2>
+        <div class="education-grid">
+            <div class="edu-card glass-card animate-on-scroll">
+                <img src="assets/iitbhu1.png" alt="IIT BHU Logo" class="edu-logo">
+                <h3>IIT (BHU), Varanasi</h3>
+                <p class="degree">B.Tech in Computer Science and Engineering</p>
+                <p class="date">Dec 2021 - May 2025</p>
+                <p class="cgpa">CGPA: 7.93</p>
+            </div>
+            <div class="edu-card glass-card animate-on-scroll">
+                <div class="edu-logos-inline">
+                    <img src="assets/jnv.png" alt="JNV Logo" class="edu-logo">
+                    <img src="assets/dakshana1.png" alt="Dakshana Logo" class="edu-logo">
+                </div>
+                <h3 style="font-size: 1.05rem;">Jawahar Navodaya Vidyalaya, Bundi, Rajasthan</h3>
+                <p class="degree">CBSE (XII) | Dakshana Scholar</p>
+                <p class="date">2021</p>
+                <p class="cgpa">Percentage: 90.00%</p>
+            </div>
+            <div class="edu-card glass-card animate-on-scroll">
+                <img src="assets/jnv.png" alt="JNV Logo" class="edu-logo">
+                <h3 style="font-size: 1.05rem;">Jawahar Navodaya Vidyalaya, Jodhpur, Rajasthan</h3>
+                <p class="degree">CBSE (X)</p>
+                <p class="date">2019</p>
+                <p class="cgpa">Percentage: 92.80%</p>
+            </div>
+        </div>
+        
+        <div class="achievements-section animate-on-scroll">
+            <h3><i class="fa-solid fa-trophy"></i> Honours & Achievements</h3>
+            <ul class="achievement-list">
+                <li><strong>Competitive Programming:</strong> Maximum rating of 1469 (Specialist) on Codeforces. Maximum rating of 1494 on CodeChef.</li>
+                <li>Secured Global Rank 50 in CodeChef August Long 2022 Div 4.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title animate-on-scroll">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card glass-card animate-on-scroll">
+                <div class="project-content">
+                    <h3>MyMoney</h3>
+                    <p class="tech-stack">Flutter, Firebase, OAuth</p>
+                    <p>A personal finance tracker and group-expense splitting app. It allows you to seamlessly track expenses between you and your friends, manage lent and borrowed amounts, and features secure Gmail Auth with real-time Firebase sync.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Vamp-Niklaus/MyMoney" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="https://vamp-niklaus.github.io/MyMoney/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass-card animate-on-scroll">
+                <div class="project-content">
+                    <h3>Movie Recommendation System</h3>
+                    <p class="tech-stack">Python, ML, KNN</p>
+                    <p>Developed a user-based KNN model with collaborative filtering using Cosine Similarity to provide personalized movie recommendations based on historical ratings.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Vamp-Niklaus/Movie-Recommendation-System" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass-card animate-on-scroll">
+                <div class="project-content">
+                    <h3>OTT Ratings</h3>
+                    <p class="tech-stack">Django, Python, HTML/CSS</p>
+                    <p>An OTT Ratings platform allowing users to view, rate, and comment on web series. Utilized Django models to manage backend data efficiently.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Vamp-Niklaus/OTT-Ratings" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="https://ottratings.onrender.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass-card animate-on-scroll">
+                <div class="project-content">
+                    <h3>Railway Ticket Booking System</h3>
+                    <p class="tech-stack">Web Development</p>
+                    <p>A web-based railway ticket booking interface mimicking core IRCTC functionalities.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Vamp-Niklaus/IRCTC" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="https://irctc-niklaus.onrender.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass-card animate-on-scroll">
+                <div class="project-content">
+                    <h3>Link Organizer</h3>
+                    <p class="tech-stack">Django, Python</p>
+                    <p>A web application to manage, categorize, and securely store your important links in one place.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Vamp-Niklaus/link_manager" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="http://vampniklaus.pythonanywhere.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title animate-on-scroll">Let's Connect</h2>
+        <div class="contact-container animate-on-scroll glass-card">
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            <div class="social-links">
+                <a href="mailto:rakeshkumarjnv7364@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/rakesh-d-kumar/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Vamp-Niklaus" class="social-icon" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://codeforces.com/profile/vamp_niklaus" class="social-icon" target="_blank" aria-label="Codeforces"><i class="fa-solid fa-code"></i></a>
+                <a href="https://www.instagram.com/rakesh_kumar_7364/" class="social-icon" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Rakesh Kumar. Built with <i class="fa-solid fa-heart" style="color: #3b82f6;"></i></p>
+    </footer>
+
+    <!-- Custom JS -->
+    <!-- Resume Modal -->
+    <div class="modal-overlay" id="resume-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>My Resume</h3>
+                <div style="display:flex; gap: 1rem; align-items: center;">
+                    <a href="assets/Resume.pdf" download class="btn primary-btn" style="padding: 0.4rem 1rem; font-size: 0.9rem;">Download <i class="fa-solid fa-download"></i></a>
+                    <button class="close-modal" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <iframe src="assets/Resume.pdf"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
