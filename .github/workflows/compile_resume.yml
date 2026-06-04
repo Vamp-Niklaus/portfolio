@@ -1,0 +1,35 @@
+name: Compile LaTeX Resume
+
+on:
+  push:
+    paths:
+      - 'resume.tex'
+
+jobs:
+  build_and_commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          compiler: pdflatex
+
+      - name: Move PDF to assets folder
+        run: |
+          mkdir -p assets
+          mv resume.pdf assets/Resume.pdf
+
+      - name: Commit and push PDF
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add assets/Resume.pdf
+          git commit -m "Auto-compile resume PDF from Overleaf sync" || echo "No changes to commit"
+          git push
