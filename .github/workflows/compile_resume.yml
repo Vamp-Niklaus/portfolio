@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'resume.tex'
+  workflow_dispatch:
 
 jobs:
   build_and_commit:
