@@ -86,3 +86,73 @@ if (resumeBtn && resumeModal) {
         }
     });
 }
+
+// Carousel Left/Right Scrolling
+document.querySelectorAll('.project-gallery-wrapper').forEach(wrapper => {
+    const scrollContainer = wrapper.querySelector('.gallery-scroll');
+    const prevBtn = wrapper.querySelector('.carousel-btn.prev');
+    const nextBtn = wrapper.querySelector('.carousel-btn.next');
+
+    if (prevBtn && nextBtn && scrollContainer) {
+        prevBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: -320, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: 320, behavior: 'smooth' });
+        });
+    }
+});
+
+// Fullscreen Lightbox Logic
+const lightbox = document.getElementById('image-lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.querySelector('.lightbox-close');
+const lightboxPrev = document.getElementById('lightbox-prev');
+const lightboxNext = document.getElementById('lightbox-next');
+
+let currentGalleryImages = [];
+let currentImageIndex = 0;
+
+if (lightbox) {
+    document.querySelectorAll('.gallery-scroll img').forEach(img => {
+        img.addEventListener('click', (e) => {
+            const gallery = e.target.closest('.gallery-scroll');
+            currentGalleryImages = Array.from(gallery.querySelectorAll('img'));
+            currentImageIndex = currentGalleryImages.indexOf(e.target);
+            
+            updateLightboxImage();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    lightboxClose.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    lightboxPrev.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+        updateLightboxImage();
+    });
+
+    lightboxNext.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % currentGalleryImages.length;
+        updateLightboxImage();
+    });
+
+    function updateLightboxImage() {
+        if (currentGalleryImages.length > 0) {
+            lightboxImg.src = currentGalleryImages[currentImageIndex].src;
+            lightboxImg.alt = currentGalleryImages[currentImageIndex].alt;
+        }
+    }
+}
