@@ -23,11 +23,11 @@
         <div class="nav-content">
             <a href="#" class="logo">RK.</a>
             <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Services</a>
                 <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact" class="nav-contact-btn">Let's Talk</a>
             </div>
             <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
         </div>
@@ -35,29 +35,43 @@
 
     <!-- Hero Section -->
     <header class="hero" id="home">
-        <div class="hero-cover"></div>
         <div class="hero-content animate-on-scroll">
-            <div class="profile-img-container">
-                <img src="assets/photo.jpeg" alt="Rakesh Kumar" class="profile-img">
+            <div class="hero-left">
+                <p class="hero-greeting">I am Rakesh Kumar</p>
+                <h1 class="hero-title">Software Engineer <br>& Developer</h1>
+                <p class="hero-subtitle">Blending thoughtful engineering with clean, responsive development to build reliable software and interfaces that perform flawlessly.</p>
+                <div class="hero-buttons">
+                    <a href="#" id="resume-btn" class="btn primary-btn">View Resume</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/rakesh-d-kumar/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Vamp-Niklaus" class="social-icon" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-            <h1 class="typing-text">Hi, I'm <span class="highlight">Rakesh Kumar</span></h1>
-            <h2 class="subtitle">Software Engineer @ Samsung R&D | IIT (BHU)</h2>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <a href="#" id="resume-btn" class="btn secondary-btn">View Resume <i class="fa-solid fa-eye"></i></a>
+            <div class="hero-right">
+                <img src="assets/photo.jpeg" alt="Rakesh Kumar" class="hero-img">
+                <div class="hero-education glass-card">
+                    <div class="edu-item">
+                        <img src="assets/iitbhu1.png" alt="IIT BHU">
+                        <div class="edu-text">
+                            <h4>IIT (BHU), Varanasi</h4>
+                            <p>B.Tech CSE (2021-2025)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- About Section -->
     <section class="section" id="about">
-        <h2 class="section-title animate-on-scroll">About Me</h2>
+        <h2 class="section-title center animate-on-scroll">About Me</h2>
         <div class="about-content animate-on-scroll">
-            <p>I am a Computer Science and Engineering graduate from IIT (BHU), Varanasi. My interests lie in expanding my knowledge across various domains, particularly in Software Engineering, Web Development, and Machine Learning. Currently, I am applying my skills as a Software Engineer in R&D at Samsung, tackling complex challenges in core platform software and C++ multithreading.</p>
+            <p>I am a Computer Science and Engineering graduate from IIT (BHU), Varanasi, currently applying my skills as a Software Engineer in R&D at Samsung. I am passionate about tackling complex challenges in core platform software and C++ multithreading, while also building clean, intuitive digital experiences.</p>
         </div>
         
         <!-- Skills -->
-        <div class="skills-container animate-on-scroll">
+        <div class="skills-container animate-on-scroll" id="skills">
             <div class="skill-category">
                 <h3>Languages</h3>
                 <div class="skill-tags">
@@ -153,7 +167,7 @@
 
     <!-- Projects Section -->
     <section class="section" id="projects">
-        <h2 class="section-title animate-on-scroll">Featured Projects</h2>
+        <h2 class="section-title center animate-on-scroll">Services & Projects</h2>
         <div class="projects-grid">
             <div class="project-card glass-card animate-on-scroll">
                 <div class="project-content">
