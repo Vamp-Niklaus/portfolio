@@ -131,7 +131,7 @@ body {
 
 .hero-greeting {
     font-size: 1.2rem;
-    color: var(--text-muted);
+    color: #e4e4e7;
     margin-bottom: 0.5rem;
 }
 
@@ -144,7 +144,7 @@ body {
 
 .hero-subtitle {
     font-size: 1.1rem;
-    color: var(--text-muted);
+    color: #e4e4e7;
     line-height: 1.6;
     margin-bottom: 2.5rem;
     max-width: 80%;
@@ -213,7 +213,7 @@ body {
     object-fit: cover;
     border-radius: 50%;
     transition: transform 0.3s ease;
-    margin-top: -120px;
+    margin-top: -180px;
     margin-right: -60px;
 }
 
