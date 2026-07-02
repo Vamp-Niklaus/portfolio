@@ -567,6 +567,18 @@ footer { text-align: center; padding: 1.5rem; border-top: 1px solid var(--glass-
 @media (max-width: 768px) {
     .nav-content { border-radius: 0; width: 100%; top: 0; padding: 1rem; justify-content: space-between; }
     .nav-links { display: none; }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(20, 20, 20, 0.95);
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--glass-border);
+    }
     .menu-btn { display: block; }
     .hero-content { flex-direction: column; text-align: center; gap: 2rem; padding-top: 5rem; }
     .hero-left { align-items: center; text-align: center; }
