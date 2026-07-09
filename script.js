@@ -69,7 +69,7 @@ const closeModalBtn = document.getElementById('close-modal-btn');
 if (resumeBtn && resumeModal) {
     resumeBtn.addEventListener('click', (e) => {
         if (window.innerWidth <= 768) {
-            window.open('assets/Rakesh Kumar-Resume.pdf', '_blank');
+            window.open('assets/Resume.pdf', '_blank');
             return;
         }
         e.preventDefault();
