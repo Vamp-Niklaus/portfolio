@@ -69,7 +69,7 @@ const closeModalBtn = document.getElementById('close-modal-btn');
 if (resumeBtn && resumeModal) {
     resumeBtn.addEventListener('click', (e) => {
         if (window.innerWidth <= 768) {
-            window.open('assets/Resume.pdf', '_blank');
+            window.open('https://vamp-niklaus.github.io/portfolio/assets/Resume.pdf', '_blank');
             return;
         }
         e.preventDefault();
